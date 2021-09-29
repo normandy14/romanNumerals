@@ -1,19 +1,25 @@
-function convertToRoman(num) {
+// Convert any arabic numerial to roman numerial with 1 to 1000's place
+
+// For each X place, up to thousand's
+// Case A: 0 in X place
+// do nothing; do not record
+// Case B: 1-3 in X place
+// tally I's
+// Case C. 4 in X place
+// subtract I from 5'S roman numerial
+// Case D. 5 in X place
+// place 5's roman numerial
+// Case E: 6-9 in X place
+// Add 5's roman numerial and tally I's
+
+convertToRoman = (num) => {
   let romanStr = '';
   let thousands = Math.floor(num/1000 % 10),
   hundreds = Math.floor(num/100 % 10),
   tens = Math.floor(num/10 % 10),
   ones = Math.floor(num % 10);
-  console.log(hundreds)
-  console.log(tens)
-  console.log(ones);
-
-  // 13. case: 1-3 in tens place
-  // 14. case: 4 in tens place
-  // 15. case: 5 in tens place
-  // 16. case 6-9 in tens place
   
-  // thousands
+  // convert thousands place
   if (thousands >= 1 && thousands <= 3) {
     romanStr += 'M'.repeat(thousands)
   }
@@ -31,7 +37,7 @@ function convertToRoman(num) {
   }
 
 
-  // hundreds:
+  // convert hundreds place
   if (hundreds >= 1 && hundreds <= 3) {
     romanStr += 'C'.repeat(tens)
   }
@@ -48,7 +54,7 @@ function convertToRoman(num) {
     romanStr += 'CM'
   }
   
-  // tens: 
+  // convert tens place
   if (tens >= 1 && tens <= 3) {
     romanStr += 'X'.repeat(tens)
   }
@@ -65,7 +71,7 @@ function convertToRoman(num) {
     romanStr += 'XC'
   }
 
-  // ones:
+  // convert ones place
   if (ones >= 1 && ones <= 3) {
     romanStr += 'I'.repeat(ones);
   }
@@ -81,8 +87,9 @@ function convertToRoman(num) {
   else if (ones == 9) {
     romanStr += 'IX';
   }
-  console.log(romanStr)
   return romanStr;
 }
 
-convertToRoman(649);
+let num = 649;
+console.log("num: " + num);
+console.log(convertToRoman(num));
