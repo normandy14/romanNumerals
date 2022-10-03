@@ -1,7 +1,7 @@
 # Roman Numerals Number Converter
 
 ## Description
-A [Free Code Camp](https://www.freecodecamp.org/) project to convert numbers to Roman Numerals
+A [Free Code Camp](https://www.freecodecamp.org/) project :fire: to convert numbers to Roman Numerals
 
 A Roman Numeral Converter that converts the given number into a roman numeral.
 
