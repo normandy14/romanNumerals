@@ -1,23 +1,20 @@
 # Roman Numerals Number Converter
 
-A [Free Code Camp project](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/roman-numeral-converter) to convert numbers to Roman Numerals
+## Description
+A [Free Code Camp](https://www.freecodecamp.org/) project to convert numbers to Roman Numerals
 
-Roman Numeral Converter
-Convert the given number into a roman numeral.
+A Roman Numeral Converter that converts the given number into a roman numeral.
 
-Roman numerals	Arabic numerals
-M	               1000
-CM	              900
-D	                500
-CD	              400
-C	                100
-XC	              90
-L	                50
-XL	              40
-X	                10
-IX	              9
-V	                5
-IV	              4
-I	                1
+## Getting Started
 
-All roman numerals answers should be provided in upper-case.
+1. Clone or download project 
+2. Run [roman-numeral-converter.js](https://github.com/normandy14/romanNumerals/blob/main/roman-numeral-converter.js)
+3. Enter number in main function `let num` to change input and get different output
+
+## Authors
+
+* :ocean: **Normandy14** - *Initial work* - [Github Account](https://github.com/Normandy14)
+
+## License
+
+:newspaper: This project is licensed under the GNU General Public License - see the [LICENSE.md](LICENSE.md) file for details.
